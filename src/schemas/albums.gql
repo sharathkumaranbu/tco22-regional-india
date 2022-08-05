@@ -1,0 +1,13 @@
+type Albums {
+  id: Int!
+  userId: Int
+  title: String
+}
+
+type Query {
+  albums(
+    id: [Int]
+    userId: [Int]
+    title: [String]
+  ): [Albums]
+}

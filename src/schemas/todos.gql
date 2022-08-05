@@ -1,0 +1,15 @@
+type Todos {
+  id: Int!
+  userId: Int
+  title: String
+  completed: Boolean
+}
+
+type Query {
+  todos(
+    id: [Int]
+    userId: [Int]
+    title: [String]
+    completed: [Boolean]
+  ): [Todos]
+}

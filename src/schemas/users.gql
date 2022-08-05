@@ -1,0 +1,23 @@
+type Users {
+  id: Int!
+  name: String
+  username: String
+  email: String
+  address: JSON
+  phone: String
+  website: String
+  company: JSON
+}
+
+type Query {
+  users(
+    id: [Int]
+    name: [String]
+    username: String
+    email: [String]
+    address: JSON
+    phone: [String]
+    website: [String]
+    company: JSON
+  ): [Users]
+}

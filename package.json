@@ -1,0 +1,46 @@
+{
+  "name": "tco22-regional-india",
+  "version": "1.0.0",
+  "description": "TCO22 - GraphQL MongoDB Demo",
+  "author": "Topcoder",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sharathkumaranbu/tco22-regional-india"
+  },
+  "scripts": {
+    "dev": "npm run lint:fix && nodemon ./src/app.js",
+    "lint": "eslint \"**/*.js\"",
+    "lint:fix": "eslint \"**/*.js\" --fix",
+    "pretest": "npm run lint",
+    "start": "npm run lint && node ./src/app.js",
+    "test": "jest --coverage --passWithNoTests"
+  },
+  "dependencies": {
+    "@graphql-tools/load-files": "6.6.0",
+    "@graphql-tools/merge": "8.3.0",
+    "apollo-server-core": "3.10.0",
+    "apollo-server-express": "3.9.0",
+    "compression": "1.7.4",
+    "cors": "2.8.5",
+    "dotenv": "16.0.1",
+    "express": "4.18.1",
+    "express-validator": "6.14.2",
+    "graphql": "16.5.0",
+    "graphql-parse-resolve-info": "4.12.3",
+    "graphql-scalars": "1.17.0",
+    "helmet": "5.1.0",
+    "mongodb": "^4.8.1"
+  },
+  "devDependencies": {
+    "eslint": "8.18.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "jest": "28.1.1",
+    "nodemon": "2.0.16",
+    "prettier": "2.7.1"
+  }
+}

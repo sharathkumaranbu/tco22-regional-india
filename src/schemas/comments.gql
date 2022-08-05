@@ -1,0 +1,17 @@
+type Comments {
+  id: Int!
+  postId: Int
+  name: String
+  email: String
+  body: String
+}
+
+type Query {
+  comments(
+    id: [Int]
+    postId: [Int]
+    name: [String]
+    email: [String]
+    body: [String]
+  ): [Comments]
+}
